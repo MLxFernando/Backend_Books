@@ -8,7 +8,7 @@ const main = async()=> {
   await mongoose;
   const server = express();
   server.use(express.json());
-  server.set('port', process.env.PORT || 3005);
+  server.set('port', process.env.PORT || 3000);
   //start server books
   server.listen(server.get('port'), () => {
     console.log(`Server on port ${server.get('port')}`)

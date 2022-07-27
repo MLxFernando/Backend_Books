@@ -4,7 +4,7 @@ const router = express.Router();
 
 
 //CREATE a new book
-const createBook = router.post('/' ,async (req, res) => {
+const createBook = router.post('' ,async (req, res) => {
     const {title, dateOfPublication, autor, languageNative, category } = req.body;
     const book = new Book({title, dateOfPublication, autor, languageNative, category });
     await book.save();

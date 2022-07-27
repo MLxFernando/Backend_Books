@@ -50,7 +50,7 @@ class App extends Component {
           this.fetchBooks();
         });
     } else {
-      fetch('/books/', {
+      fetch('/', {
         method: 'POST',
         body: JSON.stringify(this.state),
         headers: {

@@ -3,7 +3,7 @@ const { createBook, deleteBook, listBooks, retrieveBook, updateBook }= require (
 
 
 const router = (app = Application) =>{        
-    app.post('/books', createBook);   
+    app.post('/books/create', createBook);   
     app.get('/books/:id', retrieveBook);
     app.put('/books/:id',updateBook);
     app.delete('/books/:id',deleteBook)
